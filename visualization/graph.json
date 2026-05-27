@@ -1,0 +1,5181 @@
+{
+  "title": "BioMedical Knowledge Graph",
+  "summary": "A comprehensive biomedical knowledge graph with 20 node types and 30 relationship types, covering drugs, diseases, genes, proteins, pathways, clinical trials, and more. Built for GraphRAG-powered biomedical question answering.",
+  "url": "",
+  "communities": [
+    {
+      "topics": [
+        "Oncology Drug-Target Network"
+      ],
+      "members": [
+        "Pembrolizumab",
+        "Nivolumab",
+        "Atezolizumab",
+        "Trastuzumab",
+        "Non-Small Cell Lung Cancer",
+        "Melanoma",
+        "Breast Cancer"
+      ],
+      "description": "Community cluster: Oncology Drug-Target Network"
+    },
+    {
+      "topics": [
+        "Neurodegeneration Pathway Cluster"
+      ],
+      "members": [
+        "Aducanumab",
+        "Lecanemab",
+        "Alzheimer's Disease"
+      ],
+      "description": "Community cluster: Neurodegeneration Pathway Cluster"
+    },
+    {
+      "topics": [
+        "Immune Checkpoint Module"
+      ],
+      "members": [
+        "Pembrolizumab",
+        "Nivolumab",
+        "Atezolizumab"
+      ],
+      "description": "Community cluster: Immune Checkpoint Module"
+    },
+    {
+      "topics": [
+        "Metabolic Syndrome Hub"
+      ],
+      "members": [
+        "Metformin",
+        "Semaglutide",
+        "Tirzepatide",
+        "Type 2 Diabetes",
+        "Obesity"
+      ],
+      "description": "Community cluster: Metabolic Syndrome Hub"
+    },
+    {
+      "topics": [
+        "Kinase Inhibitor Network"
+      ],
+      "members": [
+        "Imatinib",
+        "Chronic Myeloid Leukemia"
+      ],
+      "description": "Community cluster: Kinase Inhibitor Network"
+    },
+    {
+      "topics": [
+        "Inflammatory Response Module"
+      ],
+      "members": [],
+      "description": "Community cluster: Inflammatory Response Module"
+    },
+    {
+      "topics": [
+        "Apoptosis Regulation Cluster"
+      ],
+      "members": [],
+      "description": "Community cluster: Apoptosis Regulation Cluster"
+    },
+    {
+      "topics": [
+        "Angiogenesis Module"
+      ],
+      "members": [],
+      "description": "Community cluster: Angiogenesis Module"
+    }
+  ],
+  "chunks": [
+    {
+      "text": "BioMedical Knowledge Graph containing 212 entities across 20 node types (Drug, Disease, Gene, Protein, Biomarker, ClinicalTrial, Researcher, Institution, AdverseEvent, ResearchPaper, Pathway, Anatomy, CellType, BiologicalProcess, MolecularFunction, Entity, Exposure, Phenotype, Cluster, ClusterSummary) connected by 423 relationships of 30 types.",
+      "rephrase": "BioMedical Knowledge Graph containing 212 entities across 20 node types (Drug, Disease, Gene, Protein, Biomarker, ClinicalTrial, Researcher, Institution, AdverseEvent, ResearchPaper, Pathway, Anatomy, CellType, BiologicalProcess, MolecularFunction, Entity, Exposure, Phenotype, Cluster, ClusterSummary) connected by 423 relationships of 30 types."
+    }
+  ],
+  "graph": {
+    "entities": [
+      {
+        "name": "Pembrolizumab",
+        "type": "Drug",
+        "description": "mechanism: PD-1 inhibitor; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 2
+      },
+      {
+        "name": "Nivolumab",
+        "type": "Drug",
+        "description": "mechanism: PD-1 inhibitor; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 2
+      },
+      {
+        "name": "Atezolizumab",
+        "type": "Drug",
+        "description": "mechanism: PD-L1 inhibitor; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 2
+      },
+      {
+        "name": "Trastuzumab",
+        "type": "Drug",
+        "description": "mechanism: HER2 inhibitor; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 0
+      },
+      {
+        "name": "Imatinib",
+        "type": "Drug",
+        "description": "mechanism: BCR-ABL tyrosine kinase inhibitor; drug_type: Small Molecule",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 4
+      },
+      {
+        "name": "Metformin",
+        "type": "Drug",
+        "description": "mechanism: AMPK activator; drug_type: Small Molecule",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 3
+      },
+      {
+        "name": "Aducanumab",
+        "type": "Drug",
+        "description": "mechanism: Anti-amyloid beta; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 1
+      },
+      {
+        "name": "Lecanemab",
+        "type": "Drug",
+        "description": "mechanism: Anti-amyloid beta; drug_type: Monoclonal Antibody",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 1
+      },
+      {
+        "name": "Semaglutide",
+        "type": "Drug",
+        "description": "mechanism: GLP-1 receptor agonist; drug_type: Peptide",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 3
+      },
+      {
+        "name": "Tirzepatide",
+        "type": "Drug",
+        "description": "mechanism: GIP/GLP-1 receptor agonist; drug_type: Peptide",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 3
+      },
+      {
+        "name": "Non-Small Cell Lung Cancer",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 0
+      },
+      {
+        "name": "Melanoma",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 0
+      },
+      {
+        "name": "Breast Cancer",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 0
+      },
+      {
+        "name": "Chronic Myeloid Leukemia",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: Low",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 4
+      },
+      {
+        "name": "Type 2 Diabetes",
+        "type": "Disease",
+        "description": "category: Metabolic; prevalence: Very High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 3
+      },
+      {
+        "name": "Alzheimer's Disease",
+        "type": "Disease",
+        "description": "category: Neurology; prevalence: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 1
+      },
+      {
+        "name": "Obesity",
+        "type": "Disease",
+        "description": "category: Metabolic; prevalence: Very High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": 3
+      },
+      {
+        "name": "Renal Cell Carcinoma",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Colorectal Cancer",
+        "type": "Disease",
+        "description": "category: Oncology; prevalence: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Parkinson's Disease",
+        "type": "Disease",
+        "description": "category: Neurology; prevalence: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Epidermal Growth Factor Receptor",
+        "type": "Gene",
+        "description": "function: Cell growth and proliferation; chromosome: 7",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "KRAS Proto-Oncogene",
+        "type": "Gene",
+        "description": "function: Cell signaling; chromosome: 12",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tumor Protein P53",
+        "type": "Gene",
+        "description": "function: Tumor suppressor; chromosome: 17",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Breast Cancer Gene 1",
+        "type": "Gene",
+        "description": "function: DNA repair; chromosome: 17",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Breast Cancer Gene 2",
+        "type": "Gene",
+        "description": "function: DNA repair; chromosome: 13",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "BCR-ABL Fusion Gene",
+        "type": "Gene",
+        "description": "function: Tyrosine kinase activity; chromosome: 9/22",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Human Epidermal Growth Factor Receptor 2",
+        "type": "Gene",
+        "description": "function: Cell growth; chromosome: 17",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Programmed Death-Ligand 1",
+        "type": "Gene",
+        "description": "function: Immune checkpoint; chromosome: 9",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid Precursor Protein",
+        "type": "Gene",
+        "description": "function: Amyloid beta production; chromosome: 21",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Apolipoprotein E",
+        "type": "Gene",
+        "description": "function: Lipid metabolism; chromosome: 19",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PD-1",
+        "type": "Protein",
+        "description": "protein_class: Immune checkpoint; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PD-L1",
+        "type": "Protein",
+        "description": "protein_class: Immune checkpoint; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "EGFR",
+        "type": "Protein",
+        "description": "protein_class: Receptor tyrosine kinase; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "HER2",
+        "type": "Protein",
+        "description": "protein_class: Receptor tyrosine kinase; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "BCR-ABL",
+        "type": "Protein",
+        "description": "protein_class: Tyrosine kinase; cellular_location: Cytoplasm",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "GLP-1R",
+        "type": "Protein",
+        "description": "protein_class: G-protein coupled receptor; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "GIPR",
+        "type": "Protein",
+        "description": "protein_class: G-protein coupled receptor; cellular_location: Cell membrane",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-beta",
+        "type": "Protein",
+        "description": "protein_class: Peptide; cellular_location: Extracellular",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tau",
+        "type": "Protein",
+        "description": "protein_class: Microtubule-associated; cellular_location: Cytoplasm",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "AMPK",
+        "type": "Protein",
+        "description": "protein_class: Serine/threonine kinase; cellular_location: Cytoplasm",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PD-L1 Expression",
+        "type": "Biomarker",
+        "description": "type: Protein; clinical_significance: Predicts immunotherapy response",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "EGFR Mutation",
+        "type": "Biomarker",
+        "description": "type: Genetic; clinical_significance: Predicts EGFR inhibitor response",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "HbA1c",
+        "type": "Biomarker",
+        "description": "type: Metabolic; clinical_significance: Diabetes control marker",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-beta 42",
+        "type": "Biomarker",
+        "description": "type: Protein; clinical_significance: Alzheimer's diagnostic marker",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tau Protein",
+        "type": "Biomarker",
+        "description": "type: Protein; clinical_significance: Neurodegeneration marker",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "BCR-ABL Transcript",
+        "type": "Biomarker",
+        "description": "type: Genetic; clinical_significance: CML monitoring",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "HER2 Status",
+        "type": "Biomarker",
+        "description": "type: Protein; clinical_significance: Breast cancer prognosis",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "KRAS Mutation",
+        "type": "Biomarker",
+        "description": "type: Genetic; clinical_significance: Colorectal cancer prognosis",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Fasting Glucose",
+        "type": "Biomarker",
+        "description": "type: Metabolic; clinical_significance: Diabetes screening",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "C-Reactive Protein",
+        "type": "Biomarker",
+        "description": "type: Protein; clinical_significance: Inflammation marker",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pembrolizumab in Advanced NSCLC",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Nivolumab vs Docetaxel in NSCLC",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Atezolizumab in Metastatic NSCLC",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 2; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Lecanemab in Early Alzheimer's",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Semaglutide for Type 2 Diabetes",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tirzepatide vs Semaglutide in T2D",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Imatinib in CML",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pembrolizumab in Melanoma",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Nivolumab in Melanoma",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 3; status: Completed",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Metformin in Alzheimer's Prevention",
+        "type": "ClinicalTrial",
+        "description": "phase: Phase 2; status: Active",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Sarah Chen",
+        "type": "Researcher",
+        "description": "specialization: Immuno-Oncology; title: Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Michael Rodriguez",
+        "type": "Researcher",
+        "description": "specialization: Clinical Trials; title: Associate Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Emily Watson",
+        "type": "Researcher",
+        "description": "specialization: Neurodegenerative Diseases; title: Principal Investigator",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. James Kim",
+        "type": "Researcher",
+        "description": "specialization: Metabolic Disorders; title: Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Lisa Anderson",
+        "type": "Researcher",
+        "description": "specialization: Oncology Drug Development; title: Chief Medical Officer",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Robert Taylor",
+        "type": "Researcher",
+        "description": "specialization: Molecular Biology; title: Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Maria Garcia",
+        "type": "Researcher",
+        "description": "specialization: Biomarker Discovery; title: Associate Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. David Lee",
+        "type": "Researcher",
+        "description": "specialization: Precision Medicine; title: Principal Investigator",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Jennifer White",
+        "type": "Researcher",
+        "description": "specialization: Alzheimer's Research; title: Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dr. Thomas Brown",
+        "type": "Researcher",
+        "description": "specialization: Diabetes Research; title: Associate Professor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Johns Hopkins University",
+        "type": "Institution",
+        "description": "type: Academic; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Memorial Sloan Kettering",
+        "type": "Institution",
+        "description": "type: Hospital; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Mayo Clinic",
+        "type": "Institution",
+        "description": "type: Hospital; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pfizer",
+        "type": "Institution",
+        "description": "type: Pharmaceutical; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Novartis",
+        "type": "Institution",
+        "description": "type: Pharmaceutical; country: Switzerland",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Roche",
+        "type": "Institution",
+        "description": "type: Pharmaceutical; country: Switzerland",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Stanford University",
+        "type": "Institution",
+        "description": "type: Academic; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Harvard Medical School",
+        "type": "Institution",
+        "description": "type: Academic; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "NIH",
+        "type": "Institution",
+        "description": "type: Government; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Merck",
+        "type": "Institution",
+        "description": "type: Pharmaceutical; country: USA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immune-related pneumonitis",
+        "type": "AdverseEvent",
+        "description": "severity: Severe; category: Immune-related",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immune-related colitis",
+        "type": "AdverseEvent",
+        "description": "severity: Moderate; category: Immune-related",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hypothyroidism",
+        "type": "AdverseEvent",
+        "description": "severity: Mild; category: Endocrine",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hyperthyroidism",
+        "type": "AdverseEvent",
+        "description": "severity: Moderate; category: Endocrine",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Nausea",
+        "type": "AdverseEvent",
+        "description": "severity: Mild; category: Gastrointestinal",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Diarrhea",
+        "type": "AdverseEvent",
+        "description": "severity: Mild; category: Gastrointestinal",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hypoglycemia",
+        "type": "AdverseEvent",
+        "description": "severity: Moderate; category: Metabolic",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Infusion reaction",
+        "type": "AdverseEvent",
+        "description": "severity: Moderate; category: Allergic",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-related imaging abnormalities",
+        "type": "AdverseEvent",
+        "description": "severity: Severe; category: Neurological",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pancreatitis",
+        "type": "AdverseEvent",
+        "description": "severity: Severe; category: Gastrointestinal",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2016-10-08",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2015-03-04",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Lecanemab in Early Alzheimer's Disease",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2022-11-29",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2016-11-10",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Imatinib Compared with Interferon for CML",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2003-03-13",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tirzepatide versus Semaglutide Once Weekly",
+        "type": "ResearchPaper",
+        "description": "journal: New England Journal of Medicine; publication_date: 2021-08-05",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Atezolizumab for Metastatic NSCLC",
+        "type": "ResearchPaper",
+        "description": "journal: Lancet; publication_date: 2015-07-14",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Metformin and Alzheimer's Disease Risk",
+        "type": "ResearchPaper",
+        "description": "journal: JAMA Neurology; publication_date: 2020-06-15",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PD-1 Blockade in Melanoma",
+        "type": "ResearchPaper",
+        "description": "journal: Nature; publication_date: 2014-07-03",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "type": "ResearchPaper",
+        "description": "journal: Science; publication_date: 2021-12-10",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PI3K-Akt Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Signal transduction; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "MAPK Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Signal transduction; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "p53 Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Cell growth and death; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Cell Cycle",
+        "type": "Pathway",
+        "description": "category: Cell growth and death; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Apoptosis",
+        "type": "Pathway",
+        "description": "category: Cell growth and death; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "Pathway",
+        "description": "category: Immune system; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "AMPK Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Signal transduction; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Insulin Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Endocrine system; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Alzheimer's Disease Pathway",
+        "type": "Pathway",
+        "description": "category: Neurodegenerative disease; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "ErbB Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Signal transduction; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "GLP-1 Signaling Pathway",
+        "type": "Pathway",
+        "description": "category: Endocrine system; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Chronic Myeloid Leukemia Pathway",
+        "type": "Pathway",
+        "description": "category: Cancer; organism: Homo sapiens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Lung",
+        "type": "Anatomy",
+        "description": "system: Respiratory; description: Organ of gas exchange",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Skin",
+        "type": "Anatomy",
+        "description": "system: Integumentary; description: Outer covering of the body",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Breast",
+        "type": "Anatomy",
+        "description": "system: Reproductive; description: Mammary gland tissue",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Bone Marrow",
+        "type": "Anatomy",
+        "description": "system: Hematopoietic; description: Site of blood cell production",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Pancreas",
+        "type": "Anatomy",
+        "description": "system: Digestive/Endocrine; description: Insulin-producing organ",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Brain",
+        "type": "Anatomy",
+        "description": "system: Nervous; description: Central nervous system organ",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hippocampus",
+        "type": "Anatomy",
+        "description": "system: Nervous; description: Memory and learning center",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Liver",
+        "type": "Anatomy",
+        "description": "system: Digestive; description: Metabolic organ",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Kidney",
+        "type": "Anatomy",
+        "description": "system: Urinary; description: Filtration organ",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Colon",
+        "type": "Anatomy",
+        "description": "system: Digestive; description: Large intestine",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Thyroid",
+        "type": "Anatomy",
+        "description": "system: Endocrine; description: Thyroid hormone production",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Adipose Tissue",
+        "type": "Anatomy",
+        "description": "system: Integumentary; description: Fat storage tissue",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "T Cell",
+        "type": "CellType",
+        "description": "category: Immune; location: Blood/Lymph nodes",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "B Cell",
+        "type": "CellType",
+        "description": "category: Immune; location: Blood/Lymph nodes",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Natural Killer Cell",
+        "type": "CellType",
+        "description": "category: Immune; location: Blood/Spleen",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Macrophage",
+        "type": "CellType",
+        "description": "category: Immune; location: Tissues",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Epithelial Cell",
+        "type": "CellType",
+        "description": "category: Structural; location: Lung/Skin/Breast",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Neuron",
+        "type": "CellType",
+        "description": "category: Neural; location: Brain/Nervous system",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Astrocyte",
+        "type": "CellType",
+        "description": "category: Neural; location: Brain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Microglia",
+        "type": "CellType",
+        "description": "category: Neural/Immune; location: Brain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Beta Cell",
+        "type": "CellType",
+        "description": "category: Endocrine; location: Pancreas",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hepatocyte",
+        "type": "CellType",
+        "description": "category: Metabolic; location: Liver",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Adipocyte",
+        "type": "CellType",
+        "description": "category: Metabolic; location: Adipose tissue",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Myeloid Progenitor",
+        "type": "CellType",
+        "description": "category: Hematopoietic; location: Bone marrow",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Apoptotic Process",
+        "type": "BiologicalProcess",
+        "description": "category: Cell death; description: Programmed cell death",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Cell Proliferation",
+        "type": "BiologicalProcess",
+        "description": "category: Cell growth; description: Increase in cell number",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immune Response",
+        "type": "BiologicalProcess",
+        "description": "category: Immune; description: Defense against pathogens",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "T Cell Activation",
+        "type": "BiologicalProcess",
+        "description": "category: Immune; description: Activation of T lymphocytes",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Inflammatory Response",
+        "type": "BiologicalProcess",
+        "description": "category: Immune; description: Response to tissue damage",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "DNA Repair",
+        "type": "BiologicalProcess",
+        "description": "category: DNA maintenance; description: Restoration of DNA structure",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Signal Transduction",
+        "type": "BiologicalProcess",
+        "description": "category: Signaling; description: Cellular communication",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Glucose Homeostasis",
+        "type": "BiologicalProcess",
+        "description": "category: Metabolism; description: Blood sugar regulation",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-beta Clearance",
+        "type": "BiologicalProcess",
+        "description": "category: Neurological; description: Removal of amyloid plaques",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Neuroinflammation",
+        "type": "BiologicalProcess",
+        "description": "category: Neurological; description: Inflammation in nervous system",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Angiogenesis",
+        "type": "BiologicalProcess",
+        "description": "category: Development; description: Blood vessel formation",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Protein Phosphorylation",
+        "type": "BiologicalProcess",
+        "description": "category: Signaling; description: Addition of phosphate groups",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Protein Tyrosine Kinase Activity",
+        "type": "MolecularFunction",
+        "description": "category: Kinase; description: Phosphorylation of tyrosine residues",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Receptor Tyrosine Kinase Activity",
+        "type": "MolecularFunction",
+        "description": "category: Kinase; description: Transmembrane receptor signaling",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "GTPase Activity",
+        "type": "MolecularFunction",
+        "description": "category: Hydrolase; description: GTP hydrolysis",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tumor Suppressor Activity",
+        "type": "MolecularFunction",
+        "description": "category: Regulation; description: Negative regulation of cell cycle",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "DNA Binding",
+        "type": "MolecularFunction",
+        "description": "category: Binding; description: Interaction with DNA",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immune Checkpoint Receptor Activity",
+        "type": "MolecularFunction",
+        "description": "category: Receptor; description: Immune regulation signaling",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Serine/Threonine Kinase Activity",
+        "type": "MolecularFunction",
+        "description": "category: Kinase; description: Phosphorylation of serine/threonine",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "G-Protein Coupled Receptor Activity",
+        "type": "MolecularFunction",
+        "description": "category: Receptor; description: Signal transduction via G-proteins",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Amyloid-beta Binding",
+        "type": "MolecularFunction",
+        "description": "category: Binding; description: Interaction with amyloid-beta peptide",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Lipid Binding",
+        "type": "MolecularFunction",
+        "description": "category: Binding; description: Interaction with lipid molecules",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Insulin Receptor Binding",
+        "type": "MolecularFunction",
+        "description": "category: Binding; description: Interaction with insulin receptor",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Peptidase Activity",
+        "type": "MolecularFunction",
+        "description": "category: Hydrolase; description: Protein cleavage",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Homo sapiens",
+        "type": "Entity",
+        "description": "entity_type: Organism; description: Human species",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Mus musculus",
+        "type": "Entity",
+        "description": "entity_type: Organism; description: Mouse model organism",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Rattus norvegicus",
+        "type": "Entity",
+        "description": "entity_type: Organism; description: Rat model organism",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "SARS-CoV-2",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: COVID-19 causative virus",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Mycobacterium tuberculosis",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Tuberculosis causative bacterium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Staphylococcus aureus",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Common bacterial pathogen",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Escherichia coli",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Gram-negative bacterium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Helicobacter pylori",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Gastric ulcer-associated bacterium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Human Papillomavirus",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Cervical cancer-associated virus",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Epstein-Barr Virus",
+        "type": "Entity",
+        "description": "entity_type: Pathogen; description: Lymphoma-associated virus",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Caenorhabditis elegans",
+        "type": "Entity",
+        "description": "entity_type: Organism; description: Nematode model organism",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Drosophila melanogaster",
+        "type": "Entity",
+        "description": "entity_type: Organism; description: Fruit fly model organism",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tobacco Smoke",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Ultraviolet Radiation",
+        "type": "Exposure",
+        "description": "exposure_type: Radiation; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Asbestos",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Air Pollution (PM2.5)",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Alcohol Consumption",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Ionizing Radiation",
+        "type": "Exposure",
+        "description": "exposure_type: Radiation; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Benzene",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Aflatoxin B1",
+        "type": "Exposure",
+        "description": "exposure_type: Biological; risk_level: High",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Radon Gas",
+        "type": "Exposure",
+        "description": "exposure_type: Radiation; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Formaldehyde",
+        "type": "Exposure",
+        "description": "exposure_type: Chemical; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "High-Fat Diet",
+        "type": "Exposure",
+        "description": "exposure_type: Dietary; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Sedentary Lifestyle",
+        "type": "Exposure",
+        "description": "exposure_type: Behavioral; risk_level: Medium",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Cachexia",
+        "type": "Phenotype",
+        "description": "category: Constitutional; description: Severe weight loss and muscle wasting",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Dyspnea",
+        "type": "Phenotype",
+        "description": "category: Respiratory; description: Difficulty breathing",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Peripheral Neuropathy",
+        "type": "Phenotype",
+        "description": "category: Neurological; description: Nerve damage in extremities",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hepatomegaly",
+        "type": "Phenotype",
+        "description": "category: Hepatic; description: Enlarged liver",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hyperglycemia",
+        "type": "Phenotype",
+        "description": "category: Metabolic; description: Elevated blood glucose",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Cognitive Decline",
+        "type": "Phenotype",
+        "description": "category: Neurological; description: Progressive loss of cognitive function",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Fatigue",
+        "type": "Phenotype",
+        "description": "category: Constitutional; description: Persistent tiredness and exhaustion",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Anemia",
+        "type": "Phenotype",
+        "description": "category: Hematologic; description: Reduced red blood cell count",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Hypertension",
+        "type": "Phenotype",
+        "description": "category: Cardiovascular; description: Elevated blood pressure",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immunodeficiency",
+        "type": "Phenotype",
+        "description": "category: Immunologic; description: Impaired immune response",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Tremor",
+        "type": "Phenotype",
+        "description": "category: Neurological; description: Involuntary rhythmic muscle movement",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Insulin Resistance",
+        "type": "Phenotype",
+        "description": "category: Metabolic; description: Reduced cellular response to insulin",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Oncology Drug-Target Network",
+        "type": "Cluster",
+        "description": "cluster_type: Drug-Protein; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Neurodegeneration Pathway Cluster",
+        "type": "Cluster",
+        "description": "cluster_type: Gene-Pathway; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Immune Checkpoint Module",
+        "type": "Cluster",
+        "description": "cluster_type: Drug-Gene-Disease; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Metabolic Syndrome Hub",
+        "type": "Cluster",
+        "description": "cluster_type: Gene-Disease; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Kinase Inhibitor Network",
+        "type": "Cluster",
+        "description": "cluster_type: Drug-Protein; algorithm: Leiden",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Inflammatory Response Module",
+        "type": "Cluster",
+        "description": "cluster_type: Gene-BiologicalProcess; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Apoptosis Regulation Cluster",
+        "type": "Cluster",
+        "description": "cluster_type: Pathway-Gene; algorithm: Leiden",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "Angiogenesis Module",
+        "type": "Cluster",
+        "description": "cluster_type: Protein-Pathway; algorithm: Louvain",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Cancer drugs primarily target receptor tyrosine kinases and immune checkpoints",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Neurodegeneration involves amyloid processing, tau phosphorylation, and mitochondrial dysfunction",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Immune checkpoint inhibitors block PD-1/PD-L1 axis to restore anti-tumor immunity",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Metabolic syndrome genes converge on insulin signaling and lipid metabolism pathways",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Kinase inhibitors target BCR-ABL, EGFR, and BRAF with high selectivity",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: Medium; summary_text: Inflammatory genes regulate NF-kB signaling and cytokine production",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: High; summary_text: Apoptosis regulation involves BCL-2 family members and caspase cascades",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      },
+      {
+        "name": "",
+        "type": "ClusterSummary",
+        "description": "therapeutic_relevance: Medium; summary_text: Angiogenesis module centers on VEGF signaling and endothelial cell proliferation",
+        "importance": 1.0,
+        "chunk_ids": [
+          0
+        ],
+        "community_id": null
+      }
+    ],
+    "relations": [
+      {
+        "source": "Pembrolizumab",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.45",
+        "strength": 0.45
+      },
+      {
+        "source": "Pembrolizumab",
+        "target": "Melanoma",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.43",
+        "strength": 0.43
+      },
+      {
+        "source": "Nivolumab",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.40",
+        "strength": 0.4
+      },
+      {
+        "source": "Nivolumab",
+        "target": "Melanoma",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.38",
+        "strength": 0.38
+      },
+      {
+        "source": "Atezolizumab",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.42",
+        "strength": 0.42
+      },
+      {
+        "source": "Trastuzumab",
+        "target": "Breast Cancer",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.52",
+        "strength": 0.52
+      },
+      {
+        "source": "Imatinib",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.89",
+        "strength": 0.89
+      },
+      {
+        "source": "Metformin",
+        "target": "Type 2 Diabetes",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.31",
+        "strength": 0.31
+      },
+      {
+        "source": "Aducanumab",
+        "target": "Alzheimer's Disease",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.22",
+        "strength": 0.22
+      },
+      {
+        "source": "Lecanemab",
+        "target": "Alzheimer's Disease",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.27",
+        "strength": 0.27
+      },
+      {
+        "source": "Semaglutide",
+        "target": "Type 2 Diabetes",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.58",
+        "strength": 0.58
+      },
+      {
+        "source": "Semaglutide",
+        "target": "Obesity",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.68",
+        "strength": 0.68
+      },
+      {
+        "source": "Tirzepatide",
+        "target": "Type 2 Diabetes",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.63",
+        "strength": 0.63
+      },
+      {
+        "source": "Tirzepatide",
+        "target": "Obesity",
+        "type": "TREATS",
+        "description": "efficacy_rate: 0.72",
+        "strength": 0.72
+      },
+      {
+        "source": "Pembrolizumab",
+        "target": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antagonist; binding_affinity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab",
+        "target": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antagonist; binding_affinity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab",
+        "target": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antagonist; binding_affinity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Trastuzumab",
+        "target": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antagonist; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib",
+        "target": "Imatinib Compared with Interferon for CML",
+        "type": "TARGETS",
+        "description": "mechanism_type: Inhibitor; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin",
+        "target": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "type": "TARGETS",
+        "description": "mechanism_type: Activator; binding_affinity: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Aducanumab",
+        "target": "Metformin and Alzheimer's Disease Risk",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antibody; binding_affinity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab",
+        "target": "Metformin and Alzheimer's Disease Risk",
+        "type": "TARGETS",
+        "description": "mechanism_type: Antibody; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide",
+        "target": "Tirzepatide versus Semaglutide Once Weekly",
+        "type": "TARGETS",
+        "description": "mechanism_type: Agonist; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide",
+        "target": "Tirzepatide versus Semaglutide Once Weekly",
+        "type": "TARGETS",
+        "description": "mechanism_type: Agonist; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide",
+        "target": "Atezolizumab for Metastatic NSCLC",
+        "type": "TARGETS",
+        "description": "mechanism_type: Agonist; binding_affinity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "Colorectal Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Moderate; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 1",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Very Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 2",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Very Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Very Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Programmed Death-Ligand 1",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Moderate; evidence_level: Medium",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Alzheimer's Disease",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Apolipoprotein E",
+        "target": "Alzheimer's Disease",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_strength: Very Strong; evidence_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-L1 Expression",
+        "target": "Pembrolizumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.78",
+        "strength": 0.78
+      },
+      {
+        "source": "PD-L1 Expression",
+        "target": "Nivolumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.72",
+        "strength": 0.72
+      },
+      {
+        "source": "PD-L1 Expression",
+        "target": "Atezolizumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.75",
+        "strength": 0.75
+      },
+      {
+        "source": "EGFR Mutation",
+        "target": "Pembrolizumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.45",
+        "strength": 0.45
+      },
+      {
+        "source": "HbA1c",
+        "target": "Semaglutide",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.68",
+        "strength": 0.68
+      },
+      {
+        "source": "HbA1c",
+        "target": "Tirzepatide",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.71",
+        "strength": 0.71
+      },
+      {
+        "source": "Amyloid-beta 42",
+        "target": "Aducanumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.62",
+        "strength": 0.62
+      },
+      {
+        "source": "Amyloid-beta 42",
+        "target": "Lecanemab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.69",
+        "strength": 0.69
+      },
+      {
+        "source": "BCR-ABL Transcript",
+        "target": "Imatinib",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.92",
+        "strength": 0.92
+      },
+      {
+        "source": "HER2 Status",
+        "target": "Trastuzumab",
+        "type": "PREDICTS_RESPONSE",
+        "description": "predictive_value: 0.88",
+        "strength": 0.88
+      },
+      {
+        "source": "T Cell",
+        "target": "Pembrolizumab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 200mg Q3W",
+        "strength": 1.0
+      },
+      {
+        "source": "B Cell",
+        "target": "Nivolumab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 3mg/kg Q2W",
+        "strength": 1.0
+      },
+      {
+        "source": "Natural Killer Cell",
+        "target": "Atezolizumab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 1200mg Q3W",
+        "strength": 1.0
+      },
+      {
+        "source": "Macrophage",
+        "target": "Lecanemab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 10mg/kg Q2W",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Semaglutide",
+        "type": "INVESTIGATES",
+        "description": "dosage: 1mg weekly",
+        "strength": 1.0
+      },
+      {
+        "source": "Neuron",
+        "target": "Tirzepatide",
+        "type": "INVESTIGATES",
+        "description": "dosage: 15mg weekly",
+        "strength": 1.0
+      },
+      {
+        "source": "Astrocyte",
+        "target": "Imatinib",
+        "type": "INVESTIGATES",
+        "description": "dosage: 400mg daily",
+        "strength": 1.0
+      },
+      {
+        "source": "Microglia",
+        "target": "Pembrolizumab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 200mg Q3W",
+        "strength": 1.0
+      },
+      {
+        "source": "Beta Cell",
+        "target": "Nivolumab",
+        "type": "INVESTIGATES",
+        "description": "dosage: 3mg/kg Q2W",
+        "strength": 1.0
+      },
+      {
+        "source": "Hepatocyte",
+        "target": "Metformin",
+        "type": "INVESTIGATES",
+        "description": "dosage: 2000mg daily",
+        "strength": 1.0
+      },
+      {
+        "source": "T Cell",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "STUDIES",
+        "description": "patient_population: Advanced NSCLC with PD-L1 \u226550%",
+        "strength": 1.0
+      },
+      {
+        "source": "B Cell",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "STUDIES",
+        "description": "patient_population: Previously treated advanced NSCLC",
+        "strength": 1.0
+      },
+      {
+        "source": "Natural Killer Cell",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "STUDIES",
+        "description": "patient_population: Metastatic NSCLC after platinum therapy",
+        "strength": 1.0
+      },
+      {
+        "source": "Macrophage",
+        "target": "Alzheimer's Disease",
+        "type": "STUDIES",
+        "description": "patient_population: Early Alzheimer's disease",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Type 2 Diabetes",
+        "type": "STUDIES",
+        "description": "patient_population: Type 2 diabetes inadequately controlled",
+        "strength": 1.0
+      },
+      {
+        "source": "Neuron",
+        "target": "Type 2 Diabetes",
+        "type": "STUDIES",
+        "description": "patient_population: Type 2 diabetes on metformin",
+        "strength": 1.0
+      },
+      {
+        "source": "Astrocyte",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "STUDIES",
+        "description": "patient_population: Newly diagnosed chronic phase CML",
+        "strength": 1.0
+      },
+      {
+        "source": "Microglia",
+        "target": "Melanoma",
+        "type": "STUDIES",
+        "description": "patient_population: Advanced melanoma",
+        "strength": 1.0
+      },
+      {
+        "source": "Beta Cell",
+        "target": "Melanoma",
+        "type": "STUDIES",
+        "description": "patient_population: Unresectable or metastatic melanoma",
+        "strength": 1.0
+      },
+      {
+        "source": "Hepatocyte",
+        "target": "Alzheimer's Disease",
+        "type": "STUDIES",
+        "description": "patient_population: Mild cognitive impairment",
+        "strength": 1.0
+      },
+      {
+        "source": "T Cell",
+        "target": "Immune-related pneumonitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.034",
+        "strength": 0.034
+      },
+      {
+        "source": "T Cell",
+        "target": "Immune-related colitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.089",
+        "strength": 0.089
+      },
+      {
+        "source": "T Cell",
+        "target": "Hypothyroidism",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.156",
+        "strength": 0.156
+      },
+      {
+        "source": "B Cell",
+        "target": "Immune-related pneumonitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.041",
+        "strength": 0.041
+      },
+      {
+        "source": "B Cell",
+        "target": "Immune-related colitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.102",
+        "strength": 0.102
+      },
+      {
+        "source": "Natural Killer Cell",
+        "target": "Immune-related colitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.078",
+        "strength": 0.078
+      },
+      {
+        "source": "Natural Killer Cell",
+        "target": "Hypothyroidism",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.134",
+        "strength": 0.134
+      },
+      {
+        "source": "Macrophage",
+        "target": "Amyloid-related imaging abnormalities",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.127",
+        "strength": 0.127
+      },
+      {
+        "source": "Macrophage",
+        "target": "Infusion reaction",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.089",
+        "strength": 0.089
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Nausea",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.234",
+        "strength": 0.234
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Diarrhea",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.189",
+        "strength": 0.189
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Hypoglycemia",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.067",
+        "strength": 0.067
+      },
+      {
+        "source": "Neuron",
+        "target": "Nausea",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.267",
+        "strength": 0.267
+      },
+      {
+        "source": "Neuron",
+        "target": "Diarrhea",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.212",
+        "strength": 0.212
+      },
+      {
+        "source": "Neuron",
+        "target": "Hypoglycemia",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.089",
+        "strength": 0.089
+      },
+      {
+        "source": "Microglia",
+        "target": "Immune-related colitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.112",
+        "strength": 0.112
+      },
+      {
+        "source": "Microglia",
+        "target": "Hypothyroidism",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.178",
+        "strength": 0.178
+      },
+      {
+        "source": "Beta Cell",
+        "target": "Immune-related colitis",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.098",
+        "strength": 0.098
+      },
+      {
+        "source": "Beta Cell",
+        "target": "Hyperthyroidism",
+        "type": "REPORTS",
+        "description": "incidence_rate: 0.045",
+        "strength": 0.045
+      },
+      {
+        "source": "Merck",
+        "target": "T Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 145.5",
+        "strength": 1.0
+      },
+      {
+        "source": "Merck",
+        "target": "Microglia",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 98.3",
+        "strength": 1.0
+      },
+      {
+        "source": "Novartis",
+        "target": "Astrocyte",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 187.2",
+        "strength": 1.0
+      },
+      {
+        "source": "Roche",
+        "target": "Natural Killer Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 112.7",
+        "strength": 1.0
+      },
+      {
+        "source": "NIH",
+        "target": "Hepatocyte",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 23.4",
+        "strength": 1.0
+      },
+      {
+        "source": "Pfizer",
+        "target": "Epithelial Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 234.8",
+        "strength": 1.0
+      },
+      {
+        "source": "Pfizer",
+        "target": "Neuron",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 198.6",
+        "strength": 1.0
+      },
+      {
+        "source": "Johns Hopkins University",
+        "target": "B Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 15.2",
+        "strength": 1.0
+      },
+      {
+        "source": "Memorial Sloan Kettering",
+        "target": "T Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 12.8",
+        "strength": 1.0
+      },
+      {
+        "source": "Mayo Clinic",
+        "target": "Macrophage",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 18.9",
+        "strength": 1.0
+      },
+      {
+        "source": "Stanford University",
+        "target": "Hepatocyte",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 8.7",
+        "strength": 1.0
+      },
+      {
+        "source": "Harvard Medical School",
+        "target": "Natural Killer Cell",
+        "type": "SPONSORS",
+        "description": "funding_amount_millions: 11.3",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Dr. Sarah Chen",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Dr. Lisa Anderson",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Senior",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Dr. Sarah Chen",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Second",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Dr. Michael Rodriguez",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Dr. Emily Watson",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Dr. Jennifer White",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Senior",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Dr. James Kim",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Dr. Thomas Brown",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Second",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Dr. Michael Rodriguez",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Dr. James Kim",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Dr. Thomas Brown",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Senior",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Dr. Sarah Chen",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Second",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Dr. Emily Watson",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Dr. Jennifer White",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Second",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Dr. Sarah Chen",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Dr. Lisa Anderson",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Senior",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Dr. Emily Watson",
+        "type": "AUTHORED_BY",
+        "description": "author_position: Second",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Dr. Jennifer White",
+        "type": "AUTHORED_BY",
+        "description": "author_position: First",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "MENTIONS",
+        "description": "mention_count: 156",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "MENTIONS",
+        "description": "mention_count: 142",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Alzheimer's Disease",
+        "type": "MENTIONS",
+        "description": "mention_count: 189",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Type 2 Diabetes",
+        "type": "MENTIONS",
+        "description": "mention_count: 134",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "MENTIONS",
+        "description": "mention_count: 167",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Type 2 Diabetes",
+        "type": "MENTIONS",
+        "description": "mention_count: 98",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "MENTIONS",
+        "description": "mention_count: 123",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Alzheimer's Disease",
+        "type": "MENTIONS",
+        "description": "mention_count: 87",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Melanoma",
+        "type": "MENTIONS",
+        "description": "mention_count: 178",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Alzheimer's Disease",
+        "type": "MENTIONS",
+        "description": "mention_count: 145",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Pembrolizumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 87",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Nivolumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 92",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Lecanemab",
+        "type": "MENTIONS",
+        "description": "mention_count: 76",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Semaglutide",
+        "type": "MENTIONS",
+        "description": "mention_count: 68",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Imatinib",
+        "type": "MENTIONS",
+        "description": "mention_count: 134",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Tirzepatide",
+        "type": "MENTIONS",
+        "description": "mention_count: 54",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Semaglutide",
+        "type": "MENTIONS",
+        "description": "mention_count: 43",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Atezolizumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 81",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Metformin",
+        "type": "MENTIONS",
+        "description": "mention_count: 39",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Pembrolizumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 45",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Nivolumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 38",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Aducanumab",
+        "type": "MENTIONS",
+        "description": "mention_count: 52",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Lecanemab",
+        "type": "MENTIONS",
+        "description": "mention_count: 48",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Sarah Chen",
+        "target": "Memorial Sloan Kettering",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Principal Investigator",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Michael Rodriguez",
+        "target": "Johns Hopkins University",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Associate Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Emily Watson",
+        "target": "Harvard Medical School",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. James Kim",
+        "target": "Stanford University",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Associate Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Lisa Anderson",
+        "target": "Merck",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Chief Medical Officer",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Robert Taylor",
+        "target": "Johns Hopkins University",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Maria Garcia",
+        "target": "Mayo Clinic",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Associate Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. David Lee",
+        "target": "Stanford University",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Principal Investigator",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Jennifer White",
+        "target": "Harvard Medical School",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Dr. Thomas Brown",
+        "target": "Johns Hopkins University",
+        "type": "AFFILIATED_WITH",
+        "description": "role: Associate Professor",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "PI3K-Akt Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "MAPK Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "ErbB Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "MAPK Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "PI3K-Akt Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "p53 Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Cell Cycle",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Regulator",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Apoptosis",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 1",
+        "target": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Indirect",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 1",
+        "target": "p53 Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Regulator",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 2",
+        "target": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Indirect",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 2",
+        "target": "p53 Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Regulator",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "Chronic Myeloid Leukemia Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "MAPK Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "ErbB Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "PI3K-Akt Signaling Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Programmed Death-Ligand 1",
+        "target": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Alzheimer's Disease Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Core component",
+        "strength": 1.0
+      },
+      {
+        "source": "Apolipoprotein E",
+        "target": "Alzheimer's Disease Pathway",
+        "type": "PARTICIPATES_IN",
+        "description": "role: Risk factor",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Receptor",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "PD-L1/PD-1 Checkpoint Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Ligand",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "ErbB Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Receptor",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "MAPK Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Upstream activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "ErbB Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Receptor",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "PI3K-Akt Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Upstream activator",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Chronic Myeloid Leukemia Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Kinase",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "MAPK Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Kinase",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "GLP-1 Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Receptor",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Insulin Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Cross-talk",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "GLP-1 Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Receptor",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Alzheimer's Disease Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Substrate",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Alzheimer's Disease Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Structural",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "AMPK Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Kinase",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Insulin Signaling Pathway",
+        "type": "INVOLVED_IN",
+        "description": "role: Cross-talk",
+        "strength": 1.0
+      },
+      {
+        "source": "PI3K-Akt Signaling Pathway",
+        "target": "Cell Proliferation",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "PI3K-Akt Signaling Pathway",
+        "target": "Apoptotic Process",
+        "type": "REGULATES",
+        "description": "relationship: Inhibits",
+        "strength": 1.0
+      },
+      {
+        "source": "MAPK Signaling Pathway",
+        "target": "Cell Proliferation",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "MAPK Signaling Pathway",
+        "target": "Signal Transduction",
+        "type": "REGULATES",
+        "description": "relationship: Core mechanism",
+        "strength": 1.0
+      },
+      {
+        "source": "p53 Signaling Pathway",
+        "target": "Apoptotic Process",
+        "type": "REGULATES",
+        "description": "relationship: Activates",
+        "strength": 1.0
+      },
+      {
+        "source": "p53 Signaling Pathway",
+        "target": "DNA Repair",
+        "type": "REGULATES",
+        "description": "relationship: Activates",
+        "strength": 1.0
+      },
+      {
+        "source": "Cell Cycle",
+        "target": "Cell Proliferation",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "Apoptosis",
+        "target": "Apoptotic Process",
+        "type": "REGULATES",
+        "description": "relationship: Core mechanism",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-L1/PD-1 Checkpoint Pathway",
+        "target": "Immune Response",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-L1/PD-1 Checkpoint Pathway",
+        "target": "T Cell Activation",
+        "type": "REGULATES",
+        "description": "relationship: Inhibits",
+        "strength": 1.0
+      },
+      {
+        "source": "AMPK Signaling Pathway",
+        "target": "Glucose Homeostasis",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "Insulin Signaling Pathway",
+        "target": "Glucose Homeostasis",
+        "type": "REGULATES",
+        "description": "relationship: Core mechanism",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease Pathway",
+        "target": "Amyloid-beta Clearance",
+        "type": "REGULATES",
+        "description": "relationship: Impaired",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease Pathway",
+        "target": "Neuroinflammation",
+        "type": "REGULATES",
+        "description": "relationship: Activates",
+        "strength": 1.0
+      },
+      {
+        "source": "ErbB Signaling Pathway",
+        "target": "Cell Proliferation",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "ErbB Signaling Pathway",
+        "target": "Angiogenesis",
+        "type": "REGULATES",
+        "description": "relationship: Activates",
+        "strength": 1.0
+      },
+      {
+        "source": "GLP-1 Signaling Pathway",
+        "target": "Glucose Homeostasis",
+        "type": "REGULATES",
+        "description": "relationship: Regulates",
+        "strength": 1.0
+      },
+      {
+        "source": "Chronic Myeloid Leukemia Pathway",
+        "target": "Cell Proliferation",
+        "type": "REGULATES",
+        "description": "relationship: Activates",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Signal Transduction",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Angiogenesis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "Signal Transduction",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Apoptotic Process",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "DNA Repair",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "T Cell Activation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: TAS",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 1",
+        "target": "DNA Repair",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 2",
+        "target": "DNA Repair",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "Protein Phosphorylation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "Signal Transduction",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Programmed Death-Ligand 1",
+        "target": "Immune Response",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Programmed Death-Ligand 1",
+        "target": "T Cell Activation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Amyloid-beta Clearance",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Neuroinflammation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Apolipoprotein E",
+        "target": "Amyloid-beta Clearance",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Apolipoprotein E",
+        "target": "Glucose Homeostasis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: TAS",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Immune Response",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "T Cell Activation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Immune Response",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "T Cell Activation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Signal Transduction",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Angiogenesis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Signal Transduction",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Cell Proliferation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Protein Phosphorylation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Glucose Homeostasis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Glucose Homeostasis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Amyloid-beta Clearance",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Neuroinflammation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Neuroinflammation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Glucose Homeostasis",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Protein Phosphorylation",
+        "type": "INVOLVED_IN",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Receptor Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Epidermal Growth Factor Receptor",
+        "target": "Protein Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "KRAS Proto-Oncogene",
+        "target": "GTPase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "Tumor Suppressor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tumor Protein P53",
+        "target": "DNA Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 1",
+        "target": "DNA Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer Gene 2",
+        "target": "DNA Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "BCR-ABL Fusion Gene",
+        "target": "Protein Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Epidermal Growth Factor Receptor 2",
+        "target": "Receptor Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Programmed Death-Ligand 1",
+        "target": "Immune Checkpoint Receptor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Amyloid-beta Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid Precursor Protein",
+        "target": "Peptidase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Apolipoprotein E",
+        "target": "Lipid Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Immune Checkpoint Receptor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Immune Checkpoint Receptor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Receptor Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Protein Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Receptor Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Protein Tyrosine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "G-Protein Coupled Receptor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "G-Protein Coupled Receptor Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Amyloid-beta Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "DNA Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Serine/Threonine Kinase Activity",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Insulin Receptor Binding",
+        "type": "HAS_FUNCTION",
+        "description": "evidence_code: IDA",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Lung",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC",
+        "target": "Skin",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Lung",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Nivolumab versus Docetaxel in Advanced NSCLC",
+        "target": "Skin",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Lung",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Lecanemab in Early Alzheimer's Disease",
+        "target": "Colon",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes",
+        "target": "Breast",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Imatinib Compared with Interferon for CML",
+        "target": "Bone Marrow",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Pancreas",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Tirzepatide versus Semaglutide Once Weekly",
+        "target": "Brain",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Pancreas",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Atezolizumab for Metastatic NSCLC",
+        "target": "Adipose Tissue",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Brain",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Metformin and Alzheimer's Disease Risk",
+        "target": "Hippocampus",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Brain",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "PD-1 Blockade in Melanoma",
+        "target": "Hippocampus",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Liver",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Pancreas",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Amyloid-beta Immunotherapy in Alzheimer's",
+        "target": "Adipose Tissue",
+        "type": "EXPRESSED_IN",
+        "description": "expression_level: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Lung",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Melanoma",
+        "target": "Skin",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer",
+        "target": "Breast",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Chronic Myeloid Leukemia",
+        "target": "Bone Marrow",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Pancreas",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Liver",
+        "type": "AFFECTS",
+        "description": "severity: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Adipose Tissue",
+        "type": "AFFECTS",
+        "description": "severity: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Brain",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Hippocampus",
+        "type": "AFFECTS",
+        "description": "severity: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Obesity",
+        "target": "Adipose Tissue",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Obesity",
+        "target": "Liver",
+        "type": "AFFECTS",
+        "description": "severity: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Renal Cell Carcinoma",
+        "target": "Kidney",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Colorectal Cancer",
+        "target": "Colon",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Parkinson's Disease",
+        "target": "Brain",
+        "type": "AFFECTS",
+        "description": "severity: High",
+        "strength": 1.0
+      },
+      {
+        "source": "T Cell",
+        "target": "Lung",
+        "type": "FOUND_IN",
+        "description": "abundance: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "T Cell",
+        "target": "Skin",
+        "type": "FOUND_IN",
+        "description": "abundance: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "B Cell",
+        "target": "Bone Marrow",
+        "type": "FOUND_IN",
+        "description": "abundance: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Natural Killer Cell",
+        "target": "Lung",
+        "type": "FOUND_IN",
+        "description": "abundance: Low",
+        "strength": 1.0
+      },
+      {
+        "source": "Macrophage",
+        "target": "Lung",
+        "type": "FOUND_IN",
+        "description": "abundance: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Macrophage",
+        "target": "Brain",
+        "type": "FOUND_IN",
+        "description": "abundance: Low",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Lung",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Skin",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Breast",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Epithelial Cell",
+        "target": "Colon",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Neuron",
+        "target": "Brain",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Neuron",
+        "target": "Hippocampus",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Astrocyte",
+        "target": "Brain",
+        "type": "FOUND_IN",
+        "description": "abundance: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Astrocyte",
+        "target": "Hippocampus",
+        "type": "FOUND_IN",
+        "description": "abundance: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Microglia",
+        "target": "Brain",
+        "type": "FOUND_IN",
+        "description": "abundance: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Microglia",
+        "target": "Hippocampus",
+        "type": "FOUND_IN",
+        "description": "abundance: Moderate",
+        "strength": 1.0
+      },
+      {
+        "source": "Beta Cell",
+        "target": "Pancreas",
+        "type": "FOUND_IN",
+        "description": "abundance: High",
+        "strength": 1.0
+      },
+      {
+        "source": "Hepatocyte",
+        "target": "Liver",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Adipocyte",
+        "target": "Adipose Tissue",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Myeloid Progenitor",
+        "target": "Bone Marrow",
+        "type": "FOUND_IN",
+        "description": "abundance: Very High",
+        "strength": 1.0
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Epithelial Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "T Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Therapeutic target",
+        "strength": 1.0
+      },
+      {
+        "source": "Melanoma",
+        "target": "Epithelial Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Melanoma",
+        "target": "T Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Therapeutic target",
+        "strength": 1.0
+      },
+      {
+        "source": "Breast Cancer",
+        "target": "Epithelial Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Chronic Myeloid Leukemia",
+        "target": "Myeloid Progenitor",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Beta Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Adipocyte",
+        "type": "INVOLVES",
+        "description": "involvement_type: Contributing",
+        "strength": 1.0
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Hepatocyte",
+        "type": "INVOLVES",
+        "description": "involvement_type: Contributing",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Neuron",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Microglia",
+        "type": "INVOLVES",
+        "description": "involvement_type: Contributing",
+        "strength": 1.0
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Astrocyte",
+        "type": "INVOLVES",
+        "description": "involvement_type: Contributing",
+        "strength": 1.0
+      },
+      {
+        "source": "Obesity",
+        "target": "Adipocyte",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Renal Cell Carcinoma",
+        "target": "Epithelial Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Colorectal Cancer",
+        "target": "Epithelial Cell",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Parkinson's Disease",
+        "target": "Neuron",
+        "type": "INVOLVES",
+        "description": "involvement_type: Primary affected",
+        "strength": 1.0
+      },
+      {
+        "source": "Parkinson's Disease",
+        "target": "Microglia",
+        "type": "INVOLVES",
+        "description": "involvement_type: Contributing",
+        "strength": 1.0
+      },
+      {
+        "source": "Oncology Drug-Target Network",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Neurodegeneration Pathway Cluster",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Immune Checkpoint Module",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Metabolic Syndrome Hub",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Kinase Inhibitor Network",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Inflammatory Response Module",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Apoptosis Regulation Cluster",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Angiogenesis Module",
+        "target": "",
+        "type": "HAS_SUMMARY",
+        "description": "",
+        "strength": 1.0
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Cachexia",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.35; severity: Severe",
+        "strength": 0.35
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Dyspnea",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.65; severity: Moderate",
+        "strength": 0.65
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Fatigue",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.80; severity: Moderate",
+        "strength": 0.8
+      },
+      {
+        "source": "Breast Cancer",
+        "target": "Fatigue",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.70; severity: Moderate",
+        "strength": 0.7
+      },
+      {
+        "source": "Breast Cancer",
+        "target": "Anemia",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.25; severity: Moderate",
+        "strength": 0.25
+      },
+      {
+        "source": "Chronic Myeloid Leukemia",
+        "target": "Anemia",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.85; severity: Severe",
+        "strength": 0.85
+      },
+      {
+        "source": "Chronic Myeloid Leukemia",
+        "target": "Fatigue",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.90; severity: Moderate",
+        "strength": 0.9
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Hyperglycemia",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.95; severity: Moderate",
+        "strength": 0.95
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Insulin Resistance",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.80; severity: Moderate",
+        "strength": 0.8
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Hypertension",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.45; severity: Moderate",
+        "strength": 0.45
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Cognitive Decline",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.95; severity: Severe",
+        "strength": 0.95
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Tremor",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.30; severity: Mild",
+        "strength": 0.3
+      },
+      {
+        "source": "Obesity",
+        "target": "Hypertension",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.55; severity: Moderate",
+        "strength": 0.55
+      },
+      {
+        "source": "Obesity",
+        "target": "Insulin Resistance",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.70; severity: Moderate",
+        "strength": 0.7
+      },
+      {
+        "source": "Parkinson's Disease",
+        "target": "Tremor",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.85; severity: Moderate",
+        "strength": 0.85
+      },
+      {
+        "source": "Parkinson's Disease",
+        "target": "Cognitive Decline",
+        "type": "HAS_PHENOTYPE",
+        "description": "frequency: 0.40; severity: Moderate",
+        "strength": 0.4
+      },
+      {
+        "source": "Tobacco Smoke",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 15.0; mechanism: Carcinogen-induced DNA damage",
+        "strength": 1.0
+      },
+      {
+        "source": "Tobacco Smoke",
+        "target": "Colorectal Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 2.5; mechanism: Mutagenic compounds in smoke",
+        "strength": 1.0
+      },
+      {
+        "source": "Ultraviolet Radiation",
+        "target": "Melanoma",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 3.8; mechanism: UV-induced DNA pyrimidine dimers",
+        "strength": 1.0
+      },
+      {
+        "source": "Asbestos",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 5.2; mechanism: Asbestos fiber-induced inflammation",
+        "strength": 1.0
+      },
+      {
+        "source": "Air Pollution (PM2.5)",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 1.4; mechanism: Particulate-induced oxidative stress",
+        "strength": 1.0
+      },
+      {
+        "source": "Alcohol Consumption",
+        "target": "Colorectal Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 1.5; mechanism: Acetaldehyde-mediated DNA damage",
+        "strength": 1.0
+      },
+      {
+        "source": "Ionizing Radiation",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 3.1; mechanism: Ionizing radiation-induced chromosomal breaks",
+        "strength": 1.0
+      },
+      {
+        "source": "Benzene",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 2.8; mechanism: Benzene metabolite-induced bone marrow toxicity",
+        "strength": 1.0
+      },
+      {
+        "source": "Aflatoxin B1",
+        "target": "Colorectal Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 4.5; mechanism: Aflatoxin-DNA adduct formation",
+        "strength": 1.0
+      },
+      {
+        "source": "Radon Gas",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 1.3; mechanism: Alpha particle-induced DNA damage",
+        "strength": 1.0
+      },
+      {
+        "source": "High-Fat Diet",
+        "target": "Type 2 Diabetes",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 2.1; mechanism: Lipid-induced insulin resistance",
+        "strength": 1.0
+      },
+      {
+        "source": "High-Fat Diet",
+        "target": "Obesity",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 3.5; mechanism: Caloric excess and adipogenesis",
+        "strength": 1.0
+      },
+      {
+        "source": "Sedentary Lifestyle",
+        "target": "Type 2 Diabetes",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 1.8; mechanism: Reduced glucose uptake in muscle",
+        "strength": 1.0
+      },
+      {
+        "source": "Sedentary Lifestyle",
+        "target": "Obesity",
+        "type": "INCREASES_RISK",
+        "description": "relative_risk: 2.2; mechanism: Reduced energy expenditure",
+        "strength": 1.0
+      },
+      {
+        "source": "Tobacco Smoke",
+        "target": "Epidermal Growth Factor Receptor",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: Tobacco carcinogens cause EGFR mutations",
+        "strength": 1.0
+      },
+      {
+        "source": "Tobacco Smoke",
+        "target": "Tumor Protein P53",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: Smoking-induced TP53 mutations",
+        "strength": 1.0
+      },
+      {
+        "source": "Ultraviolet Radiation",
+        "target": "Breast Cancer Gene 2",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: UV-induced BRAF V600E mutations",
+        "strength": 1.0
+      },
+      {
+        "source": "Asbestos",
+        "target": "Tumor Protein P53",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: Asbestos-induced TP53 alterations",
+        "strength": 1.0
+      },
+      {
+        "source": "Air Pollution (PM2.5)",
+        "target": "Tumor Protein P53",
+        "type": "AFFECTS",
+        "description": "effect_type: Epigenetic; mechanism: PM2.5 alters TP53 methylation",
+        "strength": 1.0
+      },
+      {
+        "source": "Ionizing Radiation",
+        "target": "Breast Cancer Gene 2",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: Radiation-induced BRAF rearrangements",
+        "strength": 1.0
+      },
+      {
+        "source": "Benzene",
+        "target": "Tumor Protein P53",
+        "type": "AFFECTS",
+        "description": "effect_type: Mutation; mechanism: Benzene metabolites damage TP53",
+        "strength": 1.0
+      },
+      {
+        "source": "High-Fat Diet",
+        "target": "Human Epidermal Growth Factor Receptor 2",
+        "type": "AFFECTS",
+        "description": "effect_type: Downregulation; mechanism: High-fat diet reduces insulin receptor sensitivity",
+        "strength": 1.0
+      },
+      {
+        "source": "Sedentary Lifestyle",
+        "target": "Human Epidermal Growth Factor Receptor 2",
+        "type": "AFFECTS",
+        "description": "effect_type: Downregulation; mechanism: Sedentary behavior reduces GLUT4 expression",
+        "strength": 1.0
+      },
+      {
+        "source": "Homo sapiens",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Host",
+        "strength": 1.0
+      },
+      {
+        "source": "Homo sapiens",
+        "target": "Melanoma",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Host",
+        "strength": 1.0
+      },
+      {
+        "source": "Homo sapiens",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Host",
+        "strength": 1.0
+      },
+      {
+        "source": "Homo sapiens",
+        "target": "Type 2 Diabetes",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Host",
+        "strength": 1.0
+      },
+      {
+        "source": "Homo sapiens",
+        "target": "Alzheimer's Disease",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Host",
+        "strength": 1.0
+      },
+      {
+        "source": "Mus musculus",
+        "target": "Alzheimer's Disease",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Model",
+        "strength": 1.0
+      },
+      {
+        "source": "Mus musculus",
+        "target": "Type 2 Diabetes",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Model",
+        "strength": 1.0
+      },
+      {
+        "source": "Rattus norvegicus",
+        "target": "Type 2 Diabetes",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Model",
+        "strength": 1.0
+      },
+      {
+        "source": "SARS-CoV-2",
+        "target": "Non-Small Cell Lung Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Comorbidity",
+        "strength": 1.0
+      },
+      {
+        "source": "Helicobacter pylori",
+        "target": "Colorectal Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causative",
+        "strength": 1.0
+      },
+      {
+        "source": "Human Papillomavirus",
+        "target": "Breast Cancer",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causative",
+        "strength": 1.0
+      },
+      {
+        "source": "Epstein-Barr Virus",
+        "target": "Chronic Myeloid Leukemia",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causative",
+        "strength": 1.0
+      },
+      {
+        "source": "Cachexia",
+        "target": "Tumor Protein P53",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causal",
+        "strength": 1.0
+      },
+      {
+        "source": "Dyspnea",
+        "target": "Epidermal Growth Factor Receptor",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Associated",
+        "strength": 1.0
+      },
+      {
+        "source": "Hyperglycemia",
+        "target": "Human Epidermal Growth Factor Receptor 2",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causal",
+        "strength": 1.0
+      },
+      {
+        "source": "Cognitive Decline",
+        "target": "Breast Cancer Gene 1",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causal",
+        "strength": 1.0
+      },
+      {
+        "source": "Cognitive Decline",
+        "target": "BCR-ABL Fusion Gene",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Associated",
+        "strength": 1.0
+      },
+      {
+        "source": "Anemia",
+        "target": "Tumor Protein P53",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Associated",
+        "strength": 1.0
+      },
+      {
+        "source": "Hypertension",
+        "target": "Human Epidermal Growth Factor Receptor 2",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Associated",
+        "strength": 1.0
+      },
+      {
+        "source": "Tremor",
+        "target": "BCR-ABL Fusion Gene",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causal",
+        "strength": 1.0
+      },
+      {
+        "source": "Insulin Resistance",
+        "target": "Human Epidermal Growth Factor Receptor 2",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Causal",
+        "strength": 1.0
+      },
+      {
+        "source": "Immunodeficiency",
+        "target": "Epidermal Growth Factor Receptor",
+        "type": "ASSOCIATED_WITH",
+        "description": "association_type: Associated",
+        "strength": 1.0
+      },
+      {
+        "source": "Pembrolizumab",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.95",
+        "strength": 0.95
+      },
+      {
+        "source": "Nivolumab",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.93",
+        "strength": 0.93
+      },
+      {
+        "source": "Atezolizumab",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.91",
+        "strength": 0.91
+      },
+      {
+        "source": "Trastuzumab",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.88",
+        "strength": 0.88
+      },
+      {
+        "source": "Imatinib",
+        "target": "Kinase Inhibitor Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.96",
+        "strength": 0.96
+      },
+      {
+        "source": "Aducanumab",
+        "target": "Neurodegeneration Pathway Cluster",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.85",
+        "strength": 0.85
+      },
+      {
+        "source": "Lecanemab",
+        "target": "Neurodegeneration Pathway Cluster",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.87",
+        "strength": 0.87
+      },
+      {
+        "source": "Pembrolizumab",
+        "target": "Immune Checkpoint Module",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.97",
+        "strength": 0.97
+      },
+      {
+        "source": "Nivolumab",
+        "target": "Immune Checkpoint Module",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.96",
+        "strength": 0.96
+      },
+      {
+        "source": "Atezolizumab",
+        "target": "Immune Checkpoint Module",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.94",
+        "strength": 0.94
+      },
+      {
+        "source": "Metformin",
+        "target": "Metabolic Syndrome Hub",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.82",
+        "strength": 0.82
+      },
+      {
+        "source": "Semaglutide",
+        "target": "Metabolic Syndrome Hub",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.89",
+        "strength": 0.89
+      },
+      {
+        "source": "Tirzepatide",
+        "target": "Metabolic Syndrome Hub",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.91",
+        "strength": 0.91
+      },
+      {
+        "source": "Non-Small Cell Lung Cancer",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.90",
+        "strength": 0.9
+      },
+      {
+        "source": "Melanoma",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.88",
+        "strength": 0.88
+      },
+      {
+        "source": "Breast Cancer",
+        "target": "Oncology Drug-Target Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.85",
+        "strength": 0.85
+      },
+      {
+        "source": "Chronic Myeloid Leukemia",
+        "target": "Kinase Inhibitor Network",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.92",
+        "strength": 0.92
+      },
+      {
+        "source": "Type 2 Diabetes",
+        "target": "Metabolic Syndrome Hub",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.94",
+        "strength": 0.94
+      },
+      {
+        "source": "Alzheimer's Disease",
+        "target": "Neurodegeneration Pathway Cluster",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.96",
+        "strength": 0.96
+      },
+      {
+        "source": "Obesity",
+        "target": "Metabolic Syndrome Hub",
+        "type": "BELONGS_TO",
+        "description": "membership_score: 0.88",
+        "strength": 0.88
+      }
+    ]
+  }
+}

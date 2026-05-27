@@ -1,0 +1,16 @@
+# BioMedical Knowledge Graph - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core graph visualization
+matplotlib>=3.8.0
+networkx>=3.2.0
+numpy>=1.24.0
+
+# Knwler - Document Intelligence & KG extraction
+knwler>=0.4.0
+
+# Optional: For Neo4j integration
+# neo4j>=5.0.0
+
+# Optional: For Neptune/RDF export
+# rdflib>=7.0.0
