@@ -2,7 +2,7 @@
 
 A comprehensive biomedical knowledge graph with **20 node types**, **30 relationship types**, and **212+ entities** — designed for GraphRAG-powered biomedical question answering, drug discovery, and clinical research intelligence.
 
-![BioMedical Knowledge Graph](visualization/BioMedical_KG.png)
+![BioMedical Knowledge Graph](visualization/BioMedical_KG_K.png)
 
 ## Overview
 
