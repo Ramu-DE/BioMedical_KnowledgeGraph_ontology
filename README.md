@@ -199,6 +199,43 @@ python scripts/run_knwler_pipeline.py --file paper.pdf --backend ollama
 | 19 | Cluster | 8 | cluster_id, name, cluster_type, algorithm | GraphRAG |
 | 20 | ClusterSummary | 8 | summary_id, summary_text, key_entities | GraphRAG |
 
+## Relationship Types Detail
+
+30 relationship types connecting the biomedical entities. Each relationship carries domain-specific properties (e.g., efficacy rates, binding affinities, evidence levels).
+
+| # | Relationship | Source → Target | Description | Key Properties |
+|---|---|---|---|---|
+| 1 | TREATS | Drug → Disease | Drug approved to treat a disease | efficacy_rate, approval_year |
+| 2 | TARGETS | Drug → Protein | Drug binds to a protein target | binding_affinity, mechanism_type |
+| 3 | ASSOCIATED_WITH | Gene → Disease | Genetic association with disease risk | association_strength, evidence_level |
+| 4 | PREDICTS_RESPONSE | Biomarker → Drug | Biomarker predicts drug response | predictive_value, threshold |
+| 5 | INVESTIGATES | ClinicalTrial → Drug | Trial testing a drug | arm_type, dosage |
+| 6 | STUDIES | ClinicalTrial → Disease | Trial studying a disease | patient_population |
+| 7 | REPORTS | ClinicalTrial → AdverseEvent | Trial reporting side effects | incidence_rate, grade |
+| 8 | SPONSORS | Institution → ClinicalTrial | Institution funding a trial | funding_amount_millions, role |
+| 9 | AUTHORED_BY | ResearchPaper → Researcher | Paper authorship | author_position |
+| 10 | MENTIONS (Disease) | ResearchPaper → Disease | Paper references a disease | mention_count |
+| 11 | MENTIONS (Drug) | ResearchPaper → Drug | Paper references a drug | mention_count |
+| 12 | AFFILIATED_WITH | Researcher → Institution | Researcher's institutional affiliation | start_year, role |
+| 13 | PARTICIPATES_IN | Gene → Pathway | Gene participates in biological pathway | role, evidence |
+| 14 | INVOLVED_IN (Pathway) | Protein → Pathway | Protein involved in pathway | role, interaction_type |
+| 15 | REGULATES | Pathway → BiologicalProcess | Pathway regulates a biological process | relationship, description |
+| 16 | INVOLVED_IN (BP-Gene) | Gene → BiologicalProcess | Gene involved in biological process | evidence_code, qualifier |
+| 17 | INVOLVED_IN (BP-Protein) | Protein → BiologicalProcess | Protein involved in biological process | evidence_code, qualifier |
+| 18 | HAS_FUNCTION (Gene) | Gene → MolecularFunction | Gene's molecular function | evidence_code, qualifier |
+| 19 | HAS_FUNCTION (Protein) | Protein → MolecularFunction | Protein's molecular function | evidence_code, qualifier |
+| 20 | EXPRESSED_IN | Protein → Anatomy | Protein expression in tissue/organ | expression_level, evidence |
+| 21 | AFFECTS | Disease → Anatomy | Disease affects anatomical structure | primary_site, severity |
+| 22 | FOUND_IN | CellType → Anatomy | Cell type found in anatomical location | abundance, state |
+| 23 | INVOLVES | Disease → CellType | Disease involves specific cell types | involvement_type, mechanism |
+| 24 | HAS_SUMMARY | Cluster → ClusterSummary | Cluster linked to its AI summary | generated_date, model_version |
+| 25 | HAS_PHENOTYPE | Disease → Phenotype | Disease manifests as clinical phenotype | frequency, onset, severity |
+| 26 | INCREASES_RISK | Exposure → Disease | Environmental exposure increases disease risk | relative_risk, evidence_level, mechanism |
+| 27 | AFFECTS (Exposure) | Exposure → Gene | Exposure causes genetic alterations | effect_type, mechanism, evidence_level |
+| 28 | ASSOCIATED_WITH (Entity) | Entity → Disease | Organism/pathogen associated with disease | association_type, evidence |
+| 29 | ASSOCIATED_WITH (Phenotype) | Phenotype → Gene | Phenotype linked to gene | association_type, evidence_level |
+| 30 | BELONGS_TO | Node → Cluster | Entity membership in graph community | membership_score |
+
 ## Architecture
 
 ```
