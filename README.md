@@ -4,6 +4,14 @@ A comprehensive biomedical knowledge graph with **20 node types**, **30 relation
 
 ![BioMedical Knowledge Graph](visualization/BioMedical_KG_K.png)
 
+## Analytics Dashboard
+
+![Overview Stats & Distribution](visualization/dashboard_overview.png)
+
+![Most Important Entities - PageRank](visualization/dashboard_pagerank.png)
+
+![Network Visualization](visualization/dashboard_network.png)
+
 ## Overview
 
 This project provides:
